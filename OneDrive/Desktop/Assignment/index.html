@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Tabs</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav>
+    <div id="tabs-container1">
+      <ul class="tabs-menu">
+      <li class="current"><a href="#tab-1">Home</a></li>
+      <li><a href="#tab-2">About</a></li>
+      <li><a href="#tab-3">Services</a></li>
+      <li><a href="#tab-4">Contact</a></li>
+    </ul>
+  </nav>
+<div class="tabs-container">
+    <div class="tab-content active">
+      <label for="name" style="font-weight: bolder;">Enter URL</label>
+      <input type="text" id="urlInput" placeholder="Enter URL" required>
+         <button  onclick="loadURL()">Load</button>
+         <iframe id="myIframe" width="800" height="600" frameborder="0"></iframe>
+    </div>
+    <button id="add-tab-btn">+</button>
+</div>
+<div class="tab">
+  <div id="tab-1" class="tab-content">Go to Home</div>
+  <div id="tab-2" class="tab-content">Go to About</div>
+  <div id="tab-3" class="tab-content">Go to Service</div>
+  <div id="tab-4" class="tab-content">Go to Contact</div>
+</div>
+<ul class="tabs-list">
+  <li class="active">Tab 1 <span class="close-tab">&times;</span></li>
+</ul>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
